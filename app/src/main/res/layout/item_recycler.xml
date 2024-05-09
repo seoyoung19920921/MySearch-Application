@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="156dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_collection"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/img_aley"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_heart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:background="@drawable/ic_oneheart"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="aley"
+        app:layout_constraintStart_toStartOf="@+id/img_collection"
+        app:layout_constraintTop_toBottomOf="@id/img_collection" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="time"
+        app:layout_constraintStart_toStartOf="@id/tv_site"
+        app:layout_constraintEnd_toEndOf="@id/tv_site"
+        app:layout_constraintTop_toBottomOf="@id/tv_site" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
